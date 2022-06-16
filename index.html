@@ -27,48 +27,64 @@
     <title>Frontend Mentor | NFT preview card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
     <!-- Card component -->
-    <main class="card">
-      <div class="equilibrium-img">
-        <img src="images/image-equilibrium.jpg" alt="image of an equilibrium" />
-      </div>
-      <h1>Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div class="list">
-        <ul>
-          <li>
-            <img src="images/icon-ethereum.svg" alt="image of an ethereum" />
-            0.041 ETH
-          </li>
-          <li>
-            <img src="images/icon-clock.svg" alt="image of clock" />
-            3 days left
-          </li>
-        </ul>
-      </div>
+    <main class="container">
+      <div class="card">
+        <div class="equilibrium-img">
+          <img
+            src="images/image-equilibrium.jpg"
+            alt="image of an equilibrium"
+          />
+        </div>
+        <h1>Equilibrium #3429</h1>
+        <p class="content">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
 
-      <div class="avatar">
-        <img src="images/image-avatar.png" alt="image of avatar" />
-        <p>Creation of Jules Wyvern</p>
+        <div class="details">
+          <div class="eth">
+            <p>
+              <img
+                src="images/icon-ethereum.svg"
+                alt="image of an ethereum"
+                class="img-eth"
+              />0.041 ETH
+            </p>
+          </div>
+          <div class="clock">
+            <p>
+              <img
+                src="images/icon-clock.svg"
+                alt="image of clock"
+                class="img-clock"
+              />
+              3 days left
+            </p>
+          </div>
+        </div>
+
+        <div class="avatar-box">
+          <img
+            src="images/image-avatar.png"
+            alt="image of avatar"
+            width="35"
+            heigh="35"
+          />
+          <p class="avatar-p">Creation of <span>Jules Wyvern</span></p>
+        </div>
       </div>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Ayumi.U</a>.
-    </div>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ayumi.U</a>.
+      </p>
+    </footer>
   </body>
 </html>

@@ -50,7 +50,7 @@ Default: 400
 semiBold: 600
 
 ### Line-heights:
-- 1.4 for headings
+- xx for headings
 - 1.6 for paragraphs
 
 ### Border-radius
@@ -73,30 +73,47 @@ Default: xpx
 } */
 
 body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
   font-family: "Outfit", sans-serif;
-  line-height: 1;
   font-size: 18px;
   font-weight: 400;
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(217, 54%, 11%);
+  height: 100%;
+  line-height: 1;
 }
 
 /*******************************/
 /* General Reusable Components */
 /*******************************/
 
-.card {
-  max-width: 400px;
-  background-color: hsl(216, 50%, 16%);
+.container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
+}
+
+.equilibrium-img,
+.content,
+.details,
+.avatar-box,
+h1 {
+  margin-bottom: 24px;
+}
+
+/*******************************/
+/*  Card Components */
+/*******************************/
+
+.card {
+  background-color: hsl(216, 50%, 16%);
   border-radius: 20px;
+  color: hsl(215, 51%, 70%);
+  max-width: 380px;
+  margin: 15% auto;
+  padding: 20px;
 }
 
 .equilibrium-img {
-  margin: auto;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .equilibrium-img img {
@@ -104,17 +121,78 @@ body {
   border-radius: 20px;
 }
 
-.list {
-  display: flex;
-}
-
-ul li {
-  float: left;
-  align-content: space-between;
-}
-
 h1 {
-  margin-bottom: 20px;
+  color: hsl(0, 0%, 100%);
   font-weight: 600;
   font-size: 24px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-eth,
+.img-clock {
+  margin-right: 8px;
+  position: relative;
+  top: 3.5px;
+}
+
+.eth p {
+  color: hsl(178, 100%, 50%);
+}
+
+/*******************************/
+/* Avatar section */
+/*******************************/
+
+.avatar-box {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 20px;
+}
+
+.avatar-box img {
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+.avatar-p {
+  margin-left: 16px;
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+/*******************************/
+/* Footer */
+/*******************************/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*******************************/
+/* Media Queries */
+/*******************************/
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
 }
