@@ -1,0 +1,120 @@
+/********************/
+/* Style guide */
+/********************/
+
+/*
+
+### Layout:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+### Primary:
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral:
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+
+### Typography system:
+
+FONT SIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+### Whitespace
+SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+### Font-Style:
+
+font-family: 'Outfit', sans-serif;
+
+### Font size default setup: 
+-Default: 1 rem = 16px
+-Reset: 1 rem = 10px
+10px/16px = 62.5%
+
+- !Font size (paragraph): 18px 
+
+### Font-weights:
+
+Light: 300
+Default: 400
+semiBold: 600
+
+### Line-heights:
+- 1.4 for headings
+- 1.6 for paragraphs
+
+### Border-radius
+Default: xpx
+
+*/
+
+/********************/
+/* General setting */
+/********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 54%, 11%);
+}
+
+/*******************************/
+/* General Reusable Components */
+/*******************************/
+
+.card {
+  max-width: 400px;
+  background-color: hsl(216, 50%, 16%);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.equilibrium-img {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.equilibrium-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.list {
+  display: flex;
+}
+
+ul li {
+  float: left;
+  align-content: space-between;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+}
