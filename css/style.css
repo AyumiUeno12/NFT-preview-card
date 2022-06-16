@@ -91,7 +91,7 @@ body {
   padding: 0 20px;
 }
 
-.equilibrium-img,
+.main-img,
 .content,
 .details,
 .avatar-box,
@@ -112,14 +112,46 @@ h1 {
   padding: 20px;
 }
 
-.equilibrium-img {
+.main-img {
+  position: relative;
+  width: 100%;
   text-align: center;
 }
 
-.equilibrium-img img {
-  width: 100%;
+.main-img img {
+  display: block;
   border-radius: 20px;
+  width: 100%;
 }
+
+.equilibrium-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.481);
+  border-radius: 20px;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+.equilibrium-overlay img {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 150px;
+  left: 150px;
+}
+
+.equilibrium-overlay:hover {
+  opacity: 1;
+}
+
+/* .equilibrium-overlay--blur {
+  backdrop-filter: blur(5px);
+} */
 
 h1 {
   color: hsl(0, 0%, 100%);
@@ -182,6 +214,21 @@ span {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*******************************/
+/* Styling links */
+/*******************************/
+
+a:link,
+a:visited {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: hsl(178, 100%, 50%);
 }
 
 /*******************************/
